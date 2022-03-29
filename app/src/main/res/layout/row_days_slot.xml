@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_day_slot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d_5dp"
+    android:layout_marginEnd="@dimen/d_5dp"
+    android:background="@drawable/bg_date_selector"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/d_16dp">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/d_5dp"
+        android:text="12"
+        android:visibility="gone"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/d_5dp"
+        android:paddingTop="@dimen/d_4dp"
+        android:text="MON"
+        android:visibility="visible"
+        android:textAllCaps="true"
+        android:textSize="12sp" />
+</LinearLayout>

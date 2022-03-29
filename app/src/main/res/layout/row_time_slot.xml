@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_time_slot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d_5dp"
+    android:background="@drawable/bg_date_selector"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/d_16dp">
+
+    <TextView
+        android:id="@+id/tv_time_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/d_5dp"
+        android:text="07:00 - 07:30 AM"
+        android:textAppearance="?android:textAppearanceSmall" />
+</LinearLayout>

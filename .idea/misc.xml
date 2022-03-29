@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/drawable/raound_prescription.xml" value="0.112" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/drawable/round_actionbar.xml" value="0.112" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/drawable/rounded_add.xml" value="0.112" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/drawable/rounded_button.xml" value="0.112" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/drawable/rounded_grey_back.xml" value="0.112" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_address.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_booking_test_details.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_complete_order.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_home.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_order.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_product_details.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_profile.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_search.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_select_patient.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/activity_upload_prescription.xml" value="0.1648148148148148" />
+        <entry key="..\:/TechosoftProjects/Pharming/app/src/main/res/layout/fragment_lab.xml" value="0.1648148148148148" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/fw_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="@dimen/d_10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Patient details &amp; address"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/ic_profile_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_10dp"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold"
+                    tools:text="Narender Kumar" />
+
+                <TextView
+                    android:id="@+id/tv_patient_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_4dp"
+                    android:textSize="12sp"
+                    tools:text="30 Male | 9953956955 | narender.kumar.nishad@gmail.com" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16dp"
+                android:text="Select collection slot"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_day_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_time_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Your Date"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                app:fontFamily="@font/coresanscrbold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labBookSlotDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:background="@drawable/rounded_grey_back"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:gravity="center_vertical"
+                android:hint="Select Date"
+                android:paddingHorizontal="@dimen/d_20dp"
+                android:paddingVertical="@dimen/d_15dp"
+                android:textColor="@color/app_text_secondary"
+                android:textSize="12sp"
+                app:fontFamily="@font/coresanscrregular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select Available Slot"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp"
+                    app:fontFamily="@font/coresanscrbold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_red_dot"
+                    android:drawablePadding="@dimen/d_4dp"
+                    android:text="Booked"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/coresanscrregular" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d_10dp"
+                    android:drawableStart="@drawable/ic_green_dot"
+                    android:drawablePadding="@dimen/d_4dp"
+                    android:text="Available"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/coresanscrregular" />
+            </LinearLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/labBookSlotTimeFlexBoxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:layout_marginBottom="@dimen/d_10dp"
+                app:flexWrap="wrap"
+                app:justifyContent="center" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_book_now_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_background"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/book_now"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white" />
+</LinearLayout>
